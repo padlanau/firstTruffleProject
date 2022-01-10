@@ -22,7 +22,7 @@ Migration script includes :
 Migrate: 
 - Run the following from the terminal: (make sure your Ganache is open)
 >        truffle console (only if you are not in the console yet)
->        truffle(development)> migrate --reset (only use migrate if this is your first time) ```
+>        truffle(development)> migrate --reset (only use migrate if this is your first time) 
 
 
 
