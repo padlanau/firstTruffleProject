@@ -16,7 +16,7 @@ Migration script includes :
         string public  message      = "Hello World!";  
         AND assert(message === "Hello World!");
 
-
+ Migrate:
     Run the following from the terminal: (make sure your Ganache is open)
       truffle console (only if you are not in the console yet)
       truffle(development)> migrate --reset (only use migrate if this is your first time) 
