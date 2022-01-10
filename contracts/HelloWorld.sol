@@ -19,8 +19,8 @@ pragma solidity ^0.8.10;
 
 contract HelloWorld {
  
-    string private helloMessage = "Hello World Again";  
-    string public  message      = "Hello World!";  
+   // string private helloMessage = "Hello World Again";  
+    string public message = "Hello World!";  
    
 
     function getMessage() public view returns(string memory){ 

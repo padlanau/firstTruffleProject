@@ -13,7 +13,8 @@ const HelloWorld = artifacts.require("HelloWorld");
       instance = await HelloWorld.deployed()
       instance.getMessage()
  */
-/*
+ /*
+  Case 2: 
   module.exports = function (deployer) {
       deployer.deploy(HelloWorld).then(function(instance){
         instance.setMessage("Hello Again!").then(function(){
@@ -34,7 +35,10 @@ const HelloWorld = artifacts.require("HelloWorld");
       Current message:Hello Again!
 
  */
-/*
+
+ /*
+  Case 3:
+
       module.exports = function (deployer, network, accounts) {
         deployer.deploy(HelloWorld).then(function(instance){
           instance.setMessage("Hello Again!", {value: 1000000, from: accounts[0]}).then(function(){
@@ -64,6 +68,9 @@ const HelloWorld = artifacts.require("HelloWorld");
 
 */
 
+/*
+ Case 4:
+*/
 module.exports = function (deployer, network, accounts) {
   deployer.deploy(HelloWorld).then(function(instance){
     instance.setMessage("Hello Again!", {value: 1000000, from: accounts[0]}).then(function(){
