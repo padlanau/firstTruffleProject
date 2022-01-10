@@ -89,5 +89,16 @@ Migration script includes :
 
 
       truffle(development)> test
+      > Compiled successfully using:
+      - solc: 0.8.10+commit.fc410830.Emscripten.clang
 
+      Success
+
+
+      Contract: Helloworld
+        √ should set the message correctly (2483ms)
+        √ should initialize correctly (457ms)
+
+
+      2 passing (3s)
  
