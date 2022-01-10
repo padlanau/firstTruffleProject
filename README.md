@@ -7,19 +7,22 @@ Migration script includes :
 - sending money from (payable)
 - error handling
  
- Unit Testing script uses assert() method. Steps :
-     import the contract we need to interact with
-     const HelloWorld = artifacts.require("HelloWorld");
+ Unit Testing script uses assert() method. 
+ - Steps :
+ > -  import the contract we need to interact with
+ > -  const HelloWorld = artifacts.require("HelloWorld");
  
-    assert
-        be sure the message is the same as in the smart contract
-        string public  message      = "Hello World!";  
-        AND assert(message === "Hello World!");
+ assert :
+ > -  be sure the message is the same as in the smart contract
+ > -  string public message = "Hello World!";  
+ > -  AND assert(message === "Hello World!");
 
- Migrate:
-    Run the following from the terminal: (make sure your Ganache is open)
-      truffle console (only if you are not in the console yet)
-      truffle(development)> migrate --reset (only use migrate if this is your first time) 
+Migrate: 
+- Run the following from the terminal: (make sure your Ganache is open)
+>        truffle console (only if you are not in the console yet)
+>        truffle(development)> migrate --reset (only use migrate if this is your first time) ```
+
+
 
          Compiling your contracts...
          ===========================
